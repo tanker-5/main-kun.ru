@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+    <title>Питомник Мейн Кунов</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <meta name="description" content="Питомник Мейн-Кунов в Новосибирске. Первый питомник с расширенным спектром услуг">
+        
+</head>
+<style>
+    @font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Robotolight.woff2"), url("../fonts/Robotolight.woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Robotolight.woff2"), url("../fonts/Robotolight.woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto.woff2"), url("../fonts/Roboto.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+div {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    }
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Robotomedium.woff2"), url("../fonts/Robotomedium.woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Robotobold.woff2"), url("../fonts/Robotobold.woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Yeseva One";
+  src: url("../fonts/yesevaone.woff2"), url("../fonts/yesevaone.woff");
+  font-weight: normal;
+  font-style: normal; 
+    
+.html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 400;
+  color: black;
+  background-color: #151313;
+}
+
+a {
+  text-decoration: none;
+   font-size: 90px; 
+}
+
+.room {
+
+} 
+    }
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(100%);
+}
+
+.container {
+  position: relative;
+  max-width: 1286px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.section__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.section__title {
+  margin: 0;
+  font-family: "Yeseva One", "Georgia", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+.section__lead {
+  margin: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+.header {
+  position: relative;
+  background-color: #151313;
+}
+
+.header__container {
+  position: relative;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 80px;
+  background-image: url("../img/main-cat-desktop@2x.png");
+  background-repeat: no-repeat;
+  background-size: 384px auto;
+  background-position: right 0 bottom 0;
+}
+
+
+
+.header__wrapper {
+  margin: 0 auto;
+  width: auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-top: 47px;
+  padding-bottom: 64px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.header__logo {
+  display: block;
+  width: 100%;
+  margin-bottom: 78px;
+  text-align: center;
+}
+
+.header__logo svg {
+  fill: #a07b50;
+  stroke: #151313;
+  stroke-width: 0.8;
+  transition: fill 0.3s ease-out;
+}
+
+.header__logo svg:hover,
+.header__logo svg:focus {
+  fill: #ffffff;
+}
+
+.header__content {
+  width: auto;
+  padding-left: 125px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
+
+.header__city {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: #a07b50;
+  max-width: 330px;
+  margin-top: 30px;
+  margin-bottom: 17px;
+}
+
+@media (max-width: 767px) {
+  .header__city {
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 5px;
+    max-width: 277px;
+  }
+}
+
+.header__title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: "Yeseva One", "Georgia", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 60px;
+  color: #ffffff;
+  max-width: 350px;
+  transform: translateX(-3px);
+}
+
+.header__lead {
+  margin: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #a07b50;
+  max-width: 330px;
+  margin-bottom: 48px;
+}
+
+.header__btn {
+  text-align: center;
+  width: 200px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid #a07b50;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 18px;
+  transition: color 0.3s ease-out, border 0.3s ease-out;
+  margin-bottom: 110px;
+}
+
+
+.slider {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider__container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+}
+
+.slider__wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
+.slider__slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+
+.slider__button {
+  z-index: 5;
+  display: block;
+  width: 14px;
+  height: 31px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider__button::after {
+  display: none;
+}
+
+.slider__button--prev,
+.slider__button--next {
+  position: absolute;
+  top: 50%;
+}
+
+.slider__button--prev {
+  left: 0;
+  background-image: url("../img/arrowPrev.svg");
+}
+
+.slider__button--next {
+  right: 0;
+  background-image: url("../img/arrowNext.svg");
+}
+
+
+.pets {
+  background-color: #1f1c1d;
+}
+
+.pets__tab-content-wrapper {
+  width: 100%;
+}
+
+.pets__wrapper {
+  padding-top: 223px;
+  padding-bottom: 21px;
+}
+
+.pets__title {
+  margin-bottom: 20px;
+}
+
+.pets__lead {
+  margin-bottom: 42px;
+  max-width: 523px;
+}
+
+.pets__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 259px;
+  margin-bottom: 44px;
+  padding-right: 10px;
+}
+
+.pets__item {
+  margin-right: auto;
+}
+
+.pets__item:last-of-type {
+  margin-right: 0;
+}
+
+.pets__tab {
+  display: block;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
+  color: #ffffff;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-out;
+}
+
+.pets__tab-content {
+  display: none;
+}
+
+.pets__tab-content button {
+  display: none;
+  margin: 0;
+}
+
+.pets__sliders-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.pets__btn-wraper {
+  width: 100%;
+}
+
+.pets__btn {
+  margin: 0 auto 40px;
+  margin-bottom: 40px;
+  width: 200px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid #a07b50;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  padding: 18px;
+  transition: color 0.3s ease-out, border 0.3s ease-out;
+}
+
+.gallery {
+  display: block;
+  width: 100%;
+  max-width: 1068px;
+  height: auto;
+  margin: 0 auto 56px;
+  column-count: 2;
+  column-gap: 30px;
+  padding-left: 30px;
+}
+
+@media (max-width: 1023px) {
+  .gallery {
+    display: flex;
+    height: 495px;
+    column-count: 1;
+    column-gap: 0;
+    margin-bottom: 56px;
+    padding-left: 0;
+  }
+}
+
+.gallery__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.gallery__layout-column {
+  margin-right: 35px;
+}
+
+.gallery__item {
+  flex-shrink: 1;
+  line-height: 0;
+  break-inside: avoid;
+  page-break-inside: avoid;
+  overflow: hidden;
+  width: 100%;
+}
+
+.gallery__item--top {
+  margin-bottom: 30px;
+  height: 214px;
+}
+
+.gallery__item--bottom {
+  height: 241px;
+}
+
+.gallery__item--large {
+  width: calc(100% - 30px);
+  max-width: 474px;
+  height: 485px;
+}
+
+.gallery__item img {
+  line-height: 0;
+}
+
+.gallery__item-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.breed-features {
+  background-color: #1f1c1d;
+}
+
+.breed-features__wrapper {
+  position: relative;
+  padding-top: 21px;
+  padding-bottom: 129px;
+}
+
+.breed-features__title {
+  margin-bottom: 20px;
+  transform: translateX(10px);
+}
+
+.breed-features__image {
+  width: 602px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  transform: translateX(33px);
+}
+
+.breed-features__image::before {
+  content: "";
+  position: absolute;
+  top: 105px;
+  left: 24px;
+  z-index: -1;
+  width: 519px;
+  height: 519px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.breed-features__image::after {
+  content: "";
+  position: absolute;
+  top: 49px;
+  left: -30px;
+  z-index: -1;
+  border-radius: 50%;
+  width: 631px;
+  height: 631px;
+  border: 1px solid #a07b50;
+}
+
+.breed-features__lead {
+  margin-bottom: 23px;
+  width: 62%;
+  text-transform: uppercase;
+}
+
+.breed-features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  font-size: 16px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.breed-features__item {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ffffff;
+  position: relative;
+}
+
+.breed-features__item::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  width: 15px;
+  height: 15px;
+  background-color: #a07b50;
+}
+
+.breed-features__item--cohabitation {
+  font-size: 14px;
+  line-height: 21px;
+  top: 343px;
+  left: -409px;
+  max-width: 255px;
+  text-align: right;
+}
+
+.breed-features__item--cohabitation::before {
+  right: -39px;
+}
+
+.breed-features__item--instruction {
+  top: 411px;
+  right: -482px;
+  max-width: 201px;
+}
+
+.breed-features__item--instruction::before {
+  top: 3px;
+  left: -36px;
+}
+
+.breed-features__item--weight {
+  top: 584px;
+  right: -444px;
+  max-width: 160px;
+}
+
+.breed-features__item--weight::before {
+  top: 6px;
+  left: -33px;
+}
+
+.breed-features__item--appearance {
+  max-width: 200px;
+  top: 495px;
+  left: -370px;
+  text-align: right;
+}
+
+.breed-features__item--appearance::before {
+  right: -31px;
+}
+
+@media (max-width: 1170px) {
+  .breed-features__item--cohabitation {
+    left: -368px;
+    max-width: 167px;
+  }
+
+  .breed-features__item--instruction {
+    right: -442px;
+    max-width: 132px;
+  }
+
+  .breed-features__item--weight {
+    right: -342px;
+    max-width: 110px;
+  }
+
+  .breed-features__item--appearance {
+    left: -295px;
+    max-width: 140px;
+  }
+}
+
+.advantages {
+  background-color: #151313;
+}
+
+.advantages__wrapper {
+  padding-top: 83px;
+  padding-bottom: 64px;
+}
+
+.advantages__title {
+  margin-bottom: 20px;
+}
+
+.advantages__lead {
+  margin-bottom: 46px;
+  word-spacing: 2px;
+}
+
+.advantages__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 95%;
+}
+
+.advantages__item {
+  background-color: #1f1c1d;
+  width: 31.4%;
+  min-height: 301px;
+  margin-right: 2.9%;
+  margin-bottom: 2.9%;
+  padding-top: 19.8px;
+  padding-bottom: 19.8px;
+}
+
+.advantages__item:last-of-type {
+  margin-right: 0;
+}
+
+.advantages__link {
+  display: block;
+  max-width: 320px;
+  min-height: 263px;
+  margin: auto;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 47px;
+  padding-bottom: 16px;
+  transition: background-color 0.3s ease-out, fill 0.3s ease-out, stroke 0.3s ease-out;
+  position: relative;
+}
+
+.advantages__link--24hours::before,
+.advantages__link--consult::before,
+.advantages__link--individual::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 47px;
+  left: 110px;
+}
+    .hhhyyy {
+     display: flex;
+    flex-direction: row; 
+    justify-content: center;     
+    }
+.advantages__link--24hours::before {
+  width: 107px;
+  height: 97px;
+  background-image: url(../img/feature-24hours.png);
+}
+
+.advantages__link--consult::before {
+  width: 99px;
+  height: 107px;
+  background-image: url(../img/feature-consult.png);
+}
+    .h1 { 
+    text-align: center;
+    }
+ .section__title pets__title {
+     color:gold;
+    }
+.advantages__link--individual::before {
+  width: 71px;
+  height: 108px;
+  background-image: url(../img/feature-individual.png);
+}
+
+.advantages__link span {
+  display: block;  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 115px;  max-width:556
+    }
+.show {
+  display: block;
+    }
+    .nnnmmm{
+        color: aqua;
+    }
+    .yyyuuu {
+ position: relative;
+  z-index: 2;
+  display: inline-block;
+  margin-top: 15px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  background-color: green;
+  color: goldenrod;
+  text-decoration: none;
+    }
+        
+.button {
+    margin-top: 15px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  background-color: yellowgreen;
+  color: royalblue;
+  text-decoration: none;
+    text-align: center;
+    }
+.button:hover {
+  background-color: #ffffff;
+  color: gold;
+}
+ .details p {
+  margin: 10px auto;
+  width: 70%;
+  line-height: 1.4;  
+        }
+ .details header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cccccc;
+  text-transform: uppercase;
+  font-size: 26px;  
+        }
+    .shape .details {
+  padding-top: 60px;
+  width: 310px;
+  height: 310px;
+  background-color: rgba(75, 90, 120, 0.9);
+  color: #ffffff;
+}
+    </style>
+<body>
+  <div style="display:none;">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <symbol id="icon-crown" viewbox="0 0 49 23">
+    <path d="M41.8399 22H6.99989C6.66144 22 6.3606 21.7851 6.25095 21.4657L1.0428 6.29874C0.901441 5.88527 1.12164 5.43605 1.5353 5.294C1.66216 5.25103 1.79446 5.24017 1.91725 5.26189C2.20359 5.27862 2.47046 5.45143 2.59415 5.73191C3.23797 7.19174 5.52829 11.9047 8.2001 11.9047C8.23318 11.9047 8.2667 11.9038 8.30068 11.9019C9.91229 11.8305 12.4328 9.97344 15.2885 1.53743C15.3977 1.21624 15.699 1 16.0384 1C16.3782 1 16.6795 1.21624 16.7887 1.53743C17.7637 4.41412 21.0318 11.8581 24.4253 11.8581C24.4344 11.8581 24.443 11.8576 24.4525 11.8576C26.0614 11.8382 28.5352 10.0354 31.1844 1.55507C31.2881 1.22438 31.594 1 31.9406 1H31.9483C32.298 1.00362 32.6039 1.23524 32.7008 1.57045C33.5105 4.35441 36.3821 11.6463 39.9043 11.9508C41.9622 12.12 44.2439 9.79475 46.4967 5.20172C46.6797 4.82669 47.1246 4.65796 47.5111 4.81855C47.8967 4.97824 48.0924 5.40981 47.9574 5.8052L42.5893 21.4657C42.4792 21.7856 42.1783 22 41.8399 22ZM7.56534 20.4189H41.2736L44.3758 11.3686C42.8765 12.9528 41.3542 13.6594 39.7666 13.5264C35.8656 13.1876 33.1888 7.57491 31.9442 4.27569C29.7458 10.4027 27.2915 13.4052 24.4706 13.4382C24.4552 13.4382 24.4407 13.4391 24.4253 13.4391C20.4831 13.4391 17.4398 7.40482 16.061 4.07619C13.7086 10.2743 11.1841 13.3559 8.37091 13.4817C6.92876 13.5373 5.67282 12.8198 4.59132 11.7554L7.56534 20.4189Z"></path>
+    </symbol>
+  </svg>
+  </div>
+
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__wrapper">
+        <a class="logo header__logo" aria-label="Логотип питомника Мейн Кунов">
+          <svg class="crown crown--header" width="55" height="25">
+            <use xlink:href="#icon-crown" x="0" y="0"></use>
+          </svg>
+        </a>
+        <div class="header__content" >
+            <div>
+          <p class="header__city">Новосибирск</p>
+          <h1 class="header__title">Питомник Мейн-Кунов</h1>
+          <p class="header__lead">Первый питомник с расширенным <br>спектром услуг</p>
+          <a href="#" class="header__btn yyyuuu" href="#">Смотреть котиков</a>
+                </div>
+            <img src="main-cat-desktop@2x.png" width="580" height="442" alt="мейн кун">
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <section class="section pets">
+      <div class="section__wrapper pets__wrapper container">
+        <h2 class="section__title pets__title">Питомцы</h2>
+       <p> <span class="section__lead pets__lead">Все представители нашего питомника имеют ветеринарный паспорт<br> с отметками о прививках и документ с родословной</span></p>
+       <nav>
+           <ul class="pets__list">
+          <li class="pets__item pets__item">
+            <a class="pets__tab pets__tab--active" href="#pets-tab-content-1">Коты</a>
+          </li>
+          <li class="pets__item">
+          
+              <a class="pets__tab" href="#pets-tab-content-2">Кошки</a>
+          </li>
+          <li class="pets__item">
+            <a class="pets__tab" href="#pets-tab-content-3">Котята</a>
+          </li>
+        </ul>
+        </nav>
+        <div class="pets__tab-content-wrapper">
+          <div class="pets__tab-content show slider" id="pets-tab-content-1">
+            <div class="pets__slider slider__list slider__container">
+              <div class="gallery slider__wrapper">
+                <div class="gallery__item gallery__item--top slider__slide">
+                  <img src="pets-list-2-desktop@2x.png" width="518" height="241" alt="Мейн Кун">
+                </div>
+                
+                <div class="gallery__item gallery__item--bottom slider__slide">
+                  <img class="gallery__item-img gallery__item-img--top" src="pets-list-1-desktop@2x.png" width="518" height="382" alt="Мейн Кун">
+                </div>
+                
+                <div class="gallery__item gallery__item--large slider__slide slider__slide--active">
+                  <img src="pets-list-3-desktop@2x.png" width="471" height="485" alt="Мейн Кун">
+                </div>
+              </div>
+            </div>
+
+            <div class="pets__btn-wraper">
+              <a class="button" href="#">Смотреть больше</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section breed-features">
+      <div class="container">
+        <div class="section__wrapper breed-features__wrapper">
+            <h2 class="section__title breed-features__title">Особенности породы</h2>
+          <p class="section__lead breed-features__lead">
+            Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца,<br> вы получите умное животное, которому нет равных
+          </p>
+          <div class="breed-features__image">
+             <img src="breed-features-desktop@2x.png" width="602" height="655" alt="Изображение рыжего Мейн Куна">
+          </div>
+          <ul class="breed-features__list">
+            <li class="breed-features__item breed-features__item--cohabitation">
+              Легко уживается в семьях с детьми <br>или другими животными
+            </li>
+            <li class="breed-features__item breed-features__item--instruction">
+              Выполняет команды<br> как дрессированная собака
+            </li>
+             
+            <li class="breed-features__item breed-features__item--weight">
+                Вес может достигать<br> 12 кг, а длина 1 м             
+            </li>
+            <li class="breed-features__item breed-features__item--appearance">
+              Внешний вид этой кошки<br> похож на дикую рысь
+            </li>
+          </ul>
+        </div>
+      </div>
+        <h1 class="section__title pets__title">Почему мы?</h1>
+    </section>
+<section class="section breed-features">
+     <div class="hhhyyy">
+         <img src="feature-24hours.png" width="130"> <h3 class="nnnmmm">---------------------<br>---------------------<br>работаем <br>24 часа<br>---------------------<br>---------------------<br></h3> <a class="button" href="#">Подробнее</a>
+    </div> 
+    <div class="hhhyyy">
+        <img src="feature-individual.png" width="90"><h3 class="nnnmmm">---------------------<br>---------------------<br>доступен заказ <br>--------еды---------<br>прямо с сайта<br>---------------------<br>---------------------<br></h3> <a class="button" href="#">Заказать</a>
+    </div>
+    <div class="hhhyyy">
+        <img src="feature-consult.png" width="130"><h3 class="nnnmmm">---------------------<br>---------------------<br>консультация<br> на месте<br>---------------------<br>---------------------<br></h3> <a class="button" href="#">Записаться</a>
+    </div>    
+      </section>
+  </main>
+</body>
+
+</html>
